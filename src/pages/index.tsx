@@ -9,6 +9,7 @@ import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack'
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwoWheelerIcon from '@mui/icons-material/TwoWheeler';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 
 const Logo: React.VFC = () => (
   <Image width={220} height={88} src="/images/logo.png" alt="FUNAI GAMING LOGO IMAGE" />
@@ -46,8 +47,11 @@ export default function Home() {
                 <Button variant="text" component={Link} href="/member" startIcon={<GroupIcon />} sx={{ color: "white" }}>
                   Member
                 </Button>
-                <Button variant="text" component={Link} href="https://www.youtube.com/channel/UCOzQFkpb0_XvHnC-wPh_h0g" startIcon={<YouTubeIcon />} sx={{ color: "white" }}>
+                <Button variant="text" component={Link} href="https://www.youtube.com/channel/UCOzQFkpb0_XvHnC-wPh_h0g" target="_blank" startIcon={<YouTubeIcon />} sx={{ color: "white" }}>
                   Video
+                </Button>
+                <Button variant="text" component={Link} href="https://steamcommunity.com/groups/funaigaming" target="_blank" startIcon={<SportsEsportsIcon />} sx={{ color: "white" }}>
+                  Steam
                 </Button>
                 <Button variant="text" component={Link} href="https://funairacing.com/" target="_blank" startIcon={<TwoWheelerIcon />} sx={{ color: "white" }}>
                   FUNAI RACING
