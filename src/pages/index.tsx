@@ -40,7 +40,7 @@ export default function Home() {
             <Item><Typography variant="h3" component="h1" color="white" fontWeight="bold">TOKYO VIDEO GAME VIBES</Typography></Item>
             <Item><Typography variant="body1" component="p" color="white">
               FPS, Action, Simulation etc...<br />
-              We play hard and be a Pradator.
+              We play hard and be a Predator.
             </Typography></Item>
             <Item>
               <Stack direction="row" spacing={2} color="white">
