@@ -37,7 +37,7 @@ export default function Home() {
         <Container>
           <Box sx={{ display: 'flex', flexDirection: 'column', padding: '6em 3.5em 3.5em 3.5em', m: 1, alignItems: 'flex-start' }}>
             <Item><Logo /></Item>
-            <Item><Typography variant="h3" component="h1" color="white" fontWeight="bold">TOKYO HARD GAME VIBES</Typography></Item>
+            <Item><Typography variant="h3" component="h1" color="white" fontWeight="bold">TOKYO VIDEO GAME VIBES</Typography></Item>
             <Item><Typography variant="body1" component="p" color="white">
               FPS, Action, Simulation etc...<br />
               We play hard and be a Pradator.
