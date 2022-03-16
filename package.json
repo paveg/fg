@@ -5,6 +5,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "eslint": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -30,6 +31,7 @@
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
     "husky": "^7.0.0",
     "lint-staged": "^12.3.6",
     "prettier": "^2.6.0",

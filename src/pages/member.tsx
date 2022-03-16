@@ -1,12 +1,13 @@
+import HomeIcon from "@mui/icons-material/Home";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import HomeIcon from "@mui/icons-material/Home";
-import Link from "../components/link";
-import Button from "@mui/material/Button";
-import Box from "@mui/material/Box";
-import { ProfileCard } from "../components/profileCard";
 import axios from "axios";
 import useSWR from "swr";
+
+import Link from "../components/link";
+import { ProfileCard } from "../components/profileCard";
 import { Member } from "../types/member";
 
 const memberList: Member[] = [
