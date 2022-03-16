@@ -21,11 +21,23 @@ const memberList: Member[] = [{
   twitchId: 'genga158',
 },
 {
-  name: '一姫二太郎',
+  name: 'ダン チュウタ',
+  twitterId: 'otk_nkt',
+  youtubeChannelId: 'UCPLRUmE3AO7kH71i8nv2kfg'
 },
 {
-  name: 'テスト太郎',
-}]
+  name: 'kisarazuoutlet',
+  twitterId: 'irumaoutletpark',
+},
+// {
+//   name: '司馬一太郎',
+//   twitterId: 'osiri_online',
+// },
+// {
+//   name: 'kan imiso',
+//   twitterId: 'kulx00',
+// }
+]
 
 export default function Home() {
   const fetcher = (url: string) => axios.get(url).then(res => res.data)
