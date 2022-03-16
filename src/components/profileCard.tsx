@@ -1,21 +1,29 @@
 import Avatar from '@mui/material/Avatar';
 import CardHeader from '@mui/material/CardHeader';
-import IconButton from '@mui/material/IconButton';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import Stack from '@mui/material/Stack';
+import TwitterIcon from '@mui/icons-material/Twitter'
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import StreamIcon from '@mui/icons-material/Stream';
+import Button from '@mui/material/Button';
+import Link from './link';
+import { Member } from '../types/member';
 
 type Props = {
-  name: string;
   avatarUrl: string;
+  member: Member
 }
 
-export const ProfileCard: React.VFC<Props> = ({ avatarUrl, name }) => {
+export const ProfileCard: React.VFC<Props> = ({ avatarUrl, member }) => {
   return <CardHeader
     avatar={<Avatar aria-label="avatar" src={avatarUrl} />}
-    title={name}
+    title={member.name}
     action={
-      <IconButton onClick={() => console.log('debug')} aria-label="settings">
-        <MoreVertIcon sx={{ color: 'white' }} />
-      </IconButton>
+      <Stack direction="row">
+        {member.twitterId && <Button aria-label="Twitter link" target="_blank" variant="text" component={Link} href={`https://twitter.com/${member.twitterId}`} startIcon={<TwitterIcon />} sx={{ color: "white" }} />}
+        {member.youtubeChannelId && <Button aria-label="YouTube link" target="_blank" variant="text" component={Link} href={`https://www.youtube.com/channel/${member.youtubeChannelId}`} startIcon={<YouTubeIcon />} sx={{ color: "white" }} />}
+        {member.twitchId && <Button aria-label="Twitch link" target="_blank" variant="text" component={Link} href={`https://www.twitch.tv/${member.twitchId}`} startIcon={<StreamIcon />} sx={{ color: "white" }} />}
+
+      </Stack>
     }
   />
 }

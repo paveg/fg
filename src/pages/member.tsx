@@ -7,36 +7,24 @@ import Box from "@mui/material/Box";
 import { ProfileCard } from "../components/profileCard";
 import axios from 'axios'
 import useSWR from 'swr'
-
-type Profile = {
-  name: string;
-  description?: string;
-}
-
-type IdList = {
-  twitterId?: string;
-  discordId?: string;
-  twitchId?: string;
-  youtubeChannelId?: string;
-  originId?: string;
-}
-
-type Member = Profile & IdList
+import { Member } from '../types/member'
 
 const memberList: Member[] = [{
-  name: 'funai',
+  name: 'フナイ',
   twitterId: 'paveg_',
-  discordId: 'funai#8796',
   twitchId: 'paveg_',
-  youtubeChannelId: ''
+  youtubeChannelId: 'UCOzQFkpb0_XvHnC-wPh_h0g'
 },
 {
-  name: 'テスト太郎',
-  twitterId: '',
-  discordId: '',
+  name: 'ゲンガマン',
+  twitterId: 'YZ300Xtpi',
+  twitchId: 'genga158',
 },
 {
   name: '一姫二太郎',
+},
+{
+  name: 'テスト太郎',
 }]
 
 export default function Home() {
@@ -47,10 +35,10 @@ export default function Home() {
 
   return <Container>
     <Box sx={{ p: 4, color: 'white' }}>
-      <Typography variant="h3" component="h1" color="white">work in progress</Typography>
+      <Typography variant="h3" component="h1" color="white">Member</Typography>
       {memberList.map((m: Member, index: number) => {
         const imageUrl = data[index].download_url
-        return <ProfileCard key={m.name} name={m.name} avatarUrl={imageUrl} />
+        return <ProfileCard key={m.name} member={m} avatarUrl={imageUrl} />
       })}
       <Button variant="text" component={Link} href="/" startIcon={<HomeIcon />} sx={{ color: "white" }}>
         HOME
