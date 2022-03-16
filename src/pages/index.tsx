@@ -10,6 +10,7 @@ import Stack from '@mui/material/Stack'
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwoWheelerIcon from '@mui/icons-material/TwoWheeler';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Logo: React.VFC = () => (
   <Image width={220} height={88} src="/images/logo.png" alt="FUNAI GAMING LOGO IMAGE" />
@@ -44,17 +45,20 @@ export default function Home() {
             </Typography></Item>
             <Item>
               <Stack direction="row" spacing={2} color="white">
-                <Button variant="text" component={Link} href="/member" startIcon={<GroupIcon />} sx={{ color: "white" }}>
+                <Button variant="text" component={Link} href="/member" startIcon={<GroupIcon />} sx={{ color: "white", textTransform: 'capitalize' }}>
                   Member
                 </Button>
-                <Button variant="text" component={Link} href="https://www.youtube.com/channel/UCOzQFkpb0_XvHnC-wPh_h0g" target="_blank" startIcon={<YouTubeIcon />} sx={{ color: "white" }}>
-                  Video
+                <Button variant="text" component={Link} href="https://www.youtube.com/channel/UCOzQFkpb0_XvHnC-wPh_h0g" target="_blank" startIcon={<YouTubeIcon />} sx={{ color: "white", textTransform: 'capitalize' }}>
+                  YouTube
                 </Button>
-                <Button variant="text" component={Link} href="https://steamcommunity.com/groups/funaigaming" target="_blank" startIcon={<SportsEsportsIcon />} sx={{ color: "white" }}>
+                <Button variant="text" component={Link} href="https://steamcommunity.com/groups/funaigaming" target="_blank" startIcon={<SportsEsportsIcon />} sx={{ color: "white", textTransform: 'capitalize' }}>
                   Steam
                 </Button>
-                <Button variant="text" component={Link} href="https://funairacing.com/" target="_blank" startIcon={<TwoWheelerIcon />} sx={{ color: "white" }}>
+                <Button variant="text" component={Link} href="https://funairacing.com/" target="_blank" startIcon={<TwoWheelerIcon />} sx={{ color: "white", textTransform: 'uppercase' }}>
                   FUNAI RACING
+                </Button>
+                <Button variant="text" component={Link} href="https://funairacing.com/" target="_blank" startIcon={<GitHubIcon />} sx={{ color: "white", textTransform: 'capitalize' }}>
+                  GitHub
                 </Button>
               </Stack>
             </Item>

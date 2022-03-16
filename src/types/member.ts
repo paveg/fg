@@ -9,6 +9,7 @@ export type IdList = {
   twitchId?: string;
   youtubeChannelId?: string;
   originId?: string;
+  steamId?: string;
 }
 
 export type Member = Profile & IdList

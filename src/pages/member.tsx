@@ -13,12 +13,14 @@ const memberList: Member[] = [{
   name: 'フナイ',
   twitterId: 'paveg_',
   twitchId: 'paveg_',
-  youtubeChannelId: 'UCOzQFkpb0_XvHnC-wPh_h0g'
+  youtubeChannelId: 'UCOzQFkpb0_XvHnC-wPh_h0g',
+  steamId: 'funai_gg'
 },
 {
   name: 'ゲンガマン',
   twitterId: 'YZ300Xtpi',
   twitchId: 'genga158',
+  steamId: 'genga158'
 },
 {
   name: 'ダン チュウタ',
